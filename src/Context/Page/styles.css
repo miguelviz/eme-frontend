@@ -1,0 +1,21 @@
+.containerPage{
+  height:100%;
+  position:fixed;
+  top:0;
+  transition: width 1s;
+  background-color: #a1a1a1;
+}
+.containerPageclose{
+  animation: slide-close-container 1s forwards;
+}
+.containerPageopen{
+  animation: slide-open-container 1s forwards;
+}
+@keyframes slide-open-container {
+  0% { left: 200px; }
+  100% { left: 0px; }
+}
+@keyframes slide-close-container {
+  0% { left: 0px; }
+  100% { left: 200px; }
+}

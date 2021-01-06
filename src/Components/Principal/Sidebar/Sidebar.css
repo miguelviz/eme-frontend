@@ -1,0 +1,31 @@
+.sidebar{
+  width:200px;
+  height:100vh;
+  position:fixed;
+  z-index: 200;
+  top:0;
+  background: rgb(80,76,77);
+  background: linear-gradient(180deg, rgba(80,76,77,1) 0%, rgba(30,30,30,1) 100%);
+}
+.sidebarclose{
+  animation: slide-close 1s forwards;
+}
+.sidebaropen{
+  animation: slide-open 1s forwards;
+}
+@keyframes slide-open {
+  0% { left: -200px; }
+  100% { left: 0px; }
+}
+@keyframes slide-close {
+  0% { left: 0px; }
+  100% { left: -200px; }
+}
+.sidebar-button{
+  width:30px;
+  height:90px;
+  position:absolute;
+  top:45%;
+  margin-left: 200px;
+  cursor:pointer
+}
